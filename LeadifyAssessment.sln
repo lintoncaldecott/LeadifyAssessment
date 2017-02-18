@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyAssessment", "LeadifyAssessment\LeadifyAssessment.csproj", "{AC519588-84F3-4D93-B817-108F859AA688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeadifyAssessment.Tests", "LeadifyAssessment.Tests\LeadifyAssessment.Tests.csproj", "{25A5F348-A7DF-4404-8D54-6E9734657BCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC519588-84F3-4D93-B817-108F859AA688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC519588-84F3-4D93-B817-108F859AA688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC519588-84F3-4D93-B817-108F859AA688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC519588-84F3-4D93-B817-108F859AA688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A5F348-A7DF-4404-8D54-6E9734657BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A5F348-A7DF-4404-8D54-6E9734657BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A5F348-A7DF-4404-8D54-6E9734657BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A5F348-A7DF-4404-8D54-6E9734657BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<LeadifyAssessment.DataLayer.Models.ContactModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CellPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CellPhone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ContactId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ContactId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ContactId })
+                </td>
+            </tr>
+        }
+
+    </table>
+        <p>
+            <div class="round-button"><div class="round-button-circle"><a href="@Url.Action("Create", "Contact")" class="round-button">Add</a></div></div>
+        </p>
+</div>
