@@ -57,3 +57,24 @@ textarea {
     font-weight:bold;
     text-decoration:none;
 }
+
+.table-font {
+    font-family: 'Helvetica',sans-serif;
+    font-size:16px;
+    color:azure;
+    text-shadow:1px 1px grey;
+    
+}
+.jumbotronContacts {
+  background-image:url(img/deathtostock_wired2.jpg);
+}
+
+.table-header {
+    color:cornflowerblue;
+}
+
+.table-border {
+    border:1px solid;
+    padding-right:5px;
+    padding-left:5px;
+}
