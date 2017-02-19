@@ -28,11 +28,7 @@ feel comfortable with.  - <B>DONE, Unity</B>
 
  Your application must target .NET framework 4.6.1  - <B>DONE</B>
 
- When you have completed your application it needs to be committed to a public Github
-
-repository in order for us to review it. Please include all project files and a backup of the SQL
-
-Server database.  - <B>DONE run Update-Database from package manager console to create the DB</B>
+ When you have completed your application it needs to be committed to a public Github repository in order for us to review it. Please include all project files and a backup of the SQL Server database.  - <B>DONE run Update-Database from package manager console to create the DB</B>
 
  Feel free to Google whatever you need to in order complete the project. If you do not know how to do something we would like to know how you found a solution to get it done. - <B> I had to check how to actually set up code first creation, and dependency injection. I used various tutorials to implement both of those. </B>
 
