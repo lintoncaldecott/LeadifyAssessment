@@ -12,13 +12,16 @@ namespace LeadifyAssessment.Controllers
 {
     public class ContactController : Controller
     {
-        private LeadifyAssessmentContext db = new LeadifyAssessmentContext();
-
+        LeadifyAssessmentContext dbContext;
+        public ContactController(LeadifyAssessmentContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
         // GET: Contact
         public ActionResult Index()
         {
 
-            return View(db.ContactModels.ToList());
+            return View(dbContext.ContactModels.ToList());
         }
 
         // GET: Contact/Details/5
@@ -28,7 +31,7 @@ namespace LeadifyAssessment.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ContactModel contactModel = db.ContactModels.Find(id);
+            ContactModel contactModel = dbContext.ContactModels.Find(id);
             if (contactModel == null)
             {
                 return HttpNotFound();
@@ -51,8 +54,8 @@ namespace LeadifyAssessment.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.ContactModels.Add(contactModel);
-                db.SaveChanges();
+                dbContext.ContactModels.Add(contactModel);
+                dbContext.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +69,7 @@ namespace LeadifyAssessment.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ContactModel contactModel = db.ContactModels.Find(id);
+            ContactModel contactModel = dbContext.ContactModels.Find(id);
             if (contactModel == null)
             {
                 return HttpNotFound();
@@ -83,8 +86,8 @@ namespace LeadifyAssessment.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(contactModel).State = EntityState.Modified;
-                db.SaveChanges();
+                dbContext.Entry(contactModel).State = EntityState.Modified;
+                dbContext.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(contactModel);
@@ -97,7 +100,7 @@ namespace LeadifyAssessment.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ContactModel contactModel = db.ContactModels.Find(id);
+            ContactModel contactModel = dbContext.ContactModels.Find(id);
             if (contactModel == null)
             {
                 return HttpNotFound();
@@ -110,9 +113,9 @@ namespace LeadifyAssessment.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            ContactModel contactModel = db.ContactModels.Find(id);
-            db.ContactModels.Remove(contactModel);
-            db.SaveChanges();
+            ContactModel contactModel = dbContext.ContactModels.Find(id);
+            dbContext.ContactModels.Remove(contactModel);
+            dbContext.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -120,7 +123,7 @@ namespace LeadifyAssessment.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                dbContext.Dispose();
             }
             base.Dispose(disposing);
         }
