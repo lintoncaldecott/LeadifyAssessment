@@ -15,8 +15,9 @@ namespace LeadifyAssessment.DataLayer.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public LeadifyAssessmentContext() : base("name=LeadifyAssessment")
+        public LeadifyAssessmentContext() : base("name=LeadifyTest")
         {
+            Database.SetInitializer<LeadifyAssessmentContext>(new CreateDatabaseIfNotExists<LeadifyAssessmentContext>());
         }
 
         public DbSet<ContactModel> ContactModels { get; set; }

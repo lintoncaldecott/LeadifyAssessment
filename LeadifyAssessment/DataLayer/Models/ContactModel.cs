@@ -26,5 +26,6 @@ namespace LeadifyAssessment.DataLayer.Models
         [Required()]
         [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,3}|[0-9]{1,6})(\]?)$", ErrorMessage = "Please enter a valid e-mail")]
         public string Email { get; set; }
+        public string nickname { get; set; }
     }
 }

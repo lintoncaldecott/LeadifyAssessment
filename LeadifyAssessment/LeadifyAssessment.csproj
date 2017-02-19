@@ -183,17 +183,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702190543597_initial.cs" />
-    <Compile Include="Migrations\201702190543597_initial.Designer.cs">
-      <DependentUpon>201702190543597_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201702190810258_init.cs" />
+    <Compile Include="Migrations\201702190810258_init.Designer.cs">
+      <DependentUpon>201702190810258_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702190545567_NickName.cs" />
-    <Compile Include="Migrations\201702190545567_NickName.Designer.cs">
-      <DependentUpon>201702190545567_NickName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702190548276_removeNickName.cs" />
-    <Compile Include="Migrations\201702190548276_removeNickName.Designer.cs">
-      <DependentUpon>201702190548276_removeNickName.cs</DependentUpon>
+    <Compile Include="Migrations\201702190812133_delete.cs" />
+    <Compile Include="Migrations\201702190812133_delete.Designer.cs">
+      <DependentUpon>201702190812133_delete.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContactDto.cs" />
@@ -266,7 +262,6 @@
     <Content Include="Views\Contact\Edit.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -274,14 +269,11 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702190543597_initial.resx">
-      <DependentUpon>201702190543597_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702190810258_init.resx">
+      <DependentUpon>201702190810258_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702190545567_NickName.resx">
-      <DependentUpon>201702190545567_NickName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702190548276_removeNickName.resx">
-      <DependentUpon>201702190548276_removeNickName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702190812133_delete.resx">
+      <DependentUpon>201702190812133_delete.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
