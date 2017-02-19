@@ -129,6 +129,10 @@ textarea {
     padding-bottom:5px;
 }
 
+.search-text-color {
+    color:darkgray !important;
+}
+
 .details-text {
     color:#ffffff;
 }

@@ -15,8 +15,8 @@
         @using (Html.BeginForm("Index", "Contact", FormMethod.Get))
         {
             <p class="table-font edit-text-color shadow">
-                Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
-                <input type="submit" value="Search" style="color:black" />
+                Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "search-text-color" })
+                <input type="submit" value="Search"/>
             </p>
         }
         <table class="table table-font detail-background">
