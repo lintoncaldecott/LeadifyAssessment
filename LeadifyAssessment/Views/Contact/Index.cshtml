@@ -19,18 +19,18 @@
                 <input type="submit" value="Search" />
             </p>
         }
-        <table class="table jumbotronContacts table-font">
+        <table class="table jumbotronContacts table-font ">
             <tr>
-                <th>
+                <th class="table-header underline">
                     @Html.ActionLink("First Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
                 </th>
-                <th>
+                <th class="table-header">
                     Last Name
                 </th>
-                <th>
+                <th class="table-header">
                     Contact Number
                 </th>
-                <th>
+                <th class="table-header">
                     Email
                 </th>
                 <th></th>

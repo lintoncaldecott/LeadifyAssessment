@@ -104,6 +104,7 @@ namespace LeadifyAssessment.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Name = contactModel.FirstName;
             return View(contactModel);
         }
 
