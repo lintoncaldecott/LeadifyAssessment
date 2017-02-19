@@ -183,13 +183,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702190810258_init.cs" />
-    <Compile Include="Migrations\201702190810258_init.Designer.cs">
-      <DependentUpon>201702190810258_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702190812133_delete.cs" />
-    <Compile Include="Migrations\201702190812133_delete.Designer.cs">
-      <DependentUpon>201702190812133_delete.cs</DependentUpon>
+    <Compile Include="Migrations\201702190814288_init.cs" />
+    <Compile Include="Migrations\201702190814288_init.Designer.cs">
+      <DependentUpon>201702190814288_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContactDto.cs" />
@@ -269,11 +265,8 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702190810258_init.resx">
-      <DependentUpon>201702190810258_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702190812133_delete.resx">
-      <DependentUpon>201702190812133_delete.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702190814288_init.resx">
+      <DependentUpon>201702190814288_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

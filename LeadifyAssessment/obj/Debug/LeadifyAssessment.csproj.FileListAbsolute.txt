@@ -166,4 +166,3 @@ E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.dll
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.pdb
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.init.resources
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.csproj.GenerateResource.Cache
-E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.delete.resources
