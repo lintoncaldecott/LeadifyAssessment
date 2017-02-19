@@ -180,6 +180,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\LeadifyAssessment.mdf" />
+    <Content Include="App_Data\LeadifyAssessmentContext-20170218083804.mdf" />
+    <Content Include="App_Data\LeadifyAssessmentContext-20170218083804_log.ldf">
+      <DependentUpon>LeadifyAssessmentContext-20170218083804.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\LeadifyAssessment_log.ldf">
+      <DependentUpon>LeadifyAssessment.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -225,9 +233,7 @@
     <Content Include="Views\Contact\Edit.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
