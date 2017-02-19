@@ -55,3 +55,7 @@ e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\Lea
 e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.csprojResolveAssemblyReference.cache
 e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.dll
 e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.pdb
+e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.initial.resources
+e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.csproj.GenerateResource.Cache
+e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.NickName.resources
+e:\users\callinkirjo\documents\visual studio 2015\Projects\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.removeNickName.resources
