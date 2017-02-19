@@ -120,3 +120,5 @@ E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\bin\Debug\Microsoft.Practi
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\obj\Debug\LeadifyAssessment.Tests.csprojResolveAssemblyReference.cache
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\obj\Debug\LeadifyAssessment.Tests.dll
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\obj\Debug\LeadifyAssessment.Tests.pdb
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\bin\Debug\PagedList.dll
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment.Tests\bin\Debug\PagedList.xml

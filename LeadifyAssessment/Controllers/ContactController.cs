@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using LeadifyAssessment.DataLayer.Models;
-
+using PagedList;
+using System;
 namespace LeadifyAssessment.Controllers
 {
     public class ContactController : Controller
@@ -18,10 +15,43 @@ namespace LeadifyAssessment.Controllers
             this.dbContext = dbContext;
         }
         // GET: Contact
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
 
-            return View(dbContext.ContactModels.ToList());
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+
+            var contacts = from s in dbContext.ContactModels
+                           select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                contacts = contacts.Where(s => s.LastName.Contains(searchString)
+                                       || s.FirstName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    contacts = contacts.OrderByDescending(s => s.LastName);
+                    break;
+                default:  // Name ascending 
+                    contacts = contacts.OrderBy(s => s.LastName);
+                    break;
+            }
+
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(contacts.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Contact/Details/5

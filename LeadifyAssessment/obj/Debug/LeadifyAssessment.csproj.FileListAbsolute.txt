@@ -166,3 +166,7 @@ E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.dll
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.pdb
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.Migrations.init.resources
 E:\GitRepos\LeadifyAssessment\LeadifyAssessment\obj\Debug\LeadifyAssessment.csproj.GenerateResource.Cache
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment\bin\PagedList.dll
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment\bin\PagedList.Mvc.dll
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment\bin\PagedList.xml
+E:\GitRepos\LeadifyAssessment\LeadifyAssessment\bin\PagedList.Mvc.xml
