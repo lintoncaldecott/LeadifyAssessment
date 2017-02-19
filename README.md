@@ -34,9 +34,7 @@ repository in order for us to review it. Please include all project files and a 
 
 Server database.  - <B>DONE run Update-Database from package manager console to create the DB</B>
 
- Feel free to Google whatever you need to in order complete the project. If you do not know
-
-how to do something we would like to know how you found a solution to get it done. - <B> I had to check how to actually set up code first creation, and dependency injection. I used various tutorials to implement both of those. </B>
+ Feel free to Google whatever you need to in order complete the project. If you do not know how to do something we would like to know how you found a solution to get it done. - <B> I had to check how to actually set up code first creation, and dependency injection. I used various tutorials to implement both of those. </B>
 
 Instructions
 
