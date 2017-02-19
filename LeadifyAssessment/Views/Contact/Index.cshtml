@@ -9,17 +9,17 @@
 }
 
 <br />
-<div class="table-border">
-    <h2>Your contacts</h2>
+<div class="table-border jumbotron-contacts">
+    <h2 class="shadow">Your contacts</h2>
     <div>
         @using (Html.BeginForm("Index", "Contact", FormMethod.Get))
         {
-            <p>
+            <p class="table-font edit-text-color shadow">
                 Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
                 <input type="submit" value="Search" />
             </p>
         }
-        <table class="table jumbotronContacts table-font ">
+        <table class="table table-font detail-background">
             <tr>
                 <th class="table-header underline">
                     @Html.ActionLink("First Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
@@ -60,60 +60,19 @@
             }
 
         </table>
+        <div>
+            <div>
+                <button class="btn btn-default" type="button" id="addressSearch"
+                        onclick="location.href='@Url.Action("Create", "Contact")'">Add</button>
+            </div>
+        </div>
         <br />
-        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+        <div  class="table-font edit-text-color shadow">
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
 
-        @Html.PagedListPager(Model, page => Url.Action("Index",
+            @Html.PagedListPager(Model, page => Url.Action("Index",
     new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
         </div>
     </div>
+    </div>
 
-        @*<div class="table-border">
-                <h2>Your contacts</h2>
-                <div>
-                    <table class="table jumbotronContacts table-font">
-                        <tr class="table-header">
-                            <th>
-                                @Html.DisplayNameFor(model => model.FirstName)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.LastName)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.CellPhone)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Email)
-                            </th>
-                            <th></th>
-                        </tr>
-
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.FirstName)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.LastName)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.CellPhone)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Email)
-                                </td>
-                                <td>
-                                    @Html.ActionLink("Edit", "Edit", new { id = item.ContactId }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.ContactId }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.ContactId })
-                                </td>
-                            </tr>
-                        }
-
-                    </table>
-                    <p>
-                        <div class="round-button"><div class="round-button-circle"><a href="@Url.Action("Create", "Contact")">Add</a></div></div>
-                    </p>
-                </div>
-            </div>*@

@@ -210,7 +210,9 @@
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\img\deathtostock_creative-community3.jpg" />
     <Content Include="Content\img\deathtostock_creative-community5.jpg" />
+    <Content Include="Content\img\deathtostock_creative-community9.jpg" />
     <Content Include="Content\img\deathtostock_wired2.jpg" />
     <Content Include="Content\img\deathtostock_wired8.jpg" />
     <Content Include="Content\PagedList.css" />

@@ -5,47 +5,48 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>@Model.FirstName's details</h2>
 
 <div>
-    <h4>ContactModel</h4>
     <hr />
-    <dl class="dl-horizontal jumbotronContacts">
-        <dt style="text-align:left; padding-left:15px">
+    <dl class="dl-horizontal jumbotron-details">
+        <dt style="text-align:left; padding-left:15px; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
         
-        <dd>
+        <dd style="text-align:left; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayFor(model => model.FirstName)
         </dd>
         <br />
-        <dt style="text-align:left">
+        <dt style="text-align:left; padding-left:15px; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayNameFor(model => model.LastName)
         </dt>
 
-        <dd>
+        <dd style="text-align:left; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayFor(model => model.LastName)
         </dd>
         <br />
-        <dt style="text-align:left">
+        <dt style="text-align:left; padding-left:15px; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayNameFor(model => model.CellPhone)
         </dt>
 
-        <dd>
+        <dd style="text-align:left; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayFor(model => model.CellPhone)
         </dd>
         <br />
-        <dt style="text-align:left">
+        <dt style="text-align:left; padding-left:15px; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayNameFor(model => model.Email)
         </dt>
 
-        <dd>
+        <dd style="text-align:left; color:#ffffff; font-weight:400; text-shadow:1px 1px black">
             @Html.DisplayFor(model => model.Email)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ContactId }) |
+    <div class="btn btn-default">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ContactId })
+    </div> |
     @Html.ActionLink("Back to List", "Index")
 </p>

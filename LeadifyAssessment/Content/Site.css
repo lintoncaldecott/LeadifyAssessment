@@ -23,29 +23,27 @@ textarea {
     max-width: 280px;
 }
 .round-button {
-	width:4%;
+	width:6%;
 }
 .round-button-circle {
-	
-    width: 130%;
-	height:0;
-	padding-bottom: 100%;
-    border-radius: 30%;
-	border:2px solid #cfdcec;
-    overflow:hidden;
+    width: 80px;
+	padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 6px;
     
-    background: #222222; 
-    box-shadow: 0 0 3px gray;
+    text-align:center;
+    color:white;
+    background: #127AA4; 
+    border:none;
 }
-.round-button-circle:hover {
-    
-	background:#30588e;
+.round-button-circle:hover {  
+	background:darkslategray;
 }
 .round-button a {
     display:block;
 	float:left;
 	width:100%;
-	padding-top:40%;
+	padding-top:35%;
     padding-bottom:50%;
 	line-height:1em;
 	margin-top:-0.5em;
@@ -61,12 +59,30 @@ textarea {
 .table-font {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:14px;
-    color:azure;
+    color:inherit;
     /*text-shadow:1px 1px grey;*/
-    
 }
-.jumbotronContacts {
+
+.detail-background {
+    background-color:white;
+}
+
+.jumbotron-contacts {
   background-image:url(img/deathtostock_wired2.jpg);
+}
+
+.jumbotron-details {
+  background-image:url(img/deathtostock_creative-community9.jpg);
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.jumbotron-create {
+  background-image:url(img/deathtostock_creative-community4.jpg);
+  padding-left:15px;
+  padding-right:15px;
+    padding-top:15px;
+  padding-bottom:15px;
 }
 
 .table-header {
@@ -76,12 +92,19 @@ textarea {
 
 .table-border {
     border:1px solid;
-    padding-right:5px;
-    padding-left:5px;
+    padding-right:35px;
+    padding-left:35px;
 }
 
 .underline {
     text-decoration:underline;
+}
+.bold {
+    font-weight:bold;
+}
+
+.shadow {
+    text-shadow:1px 1px black;
 }
 
 .page-subheading {
@@ -89,4 +112,26 @@ textarea {
     font-weight:bold; 
     font-size: 28px;
     text-shadow:1px 1px black
+}
+
+.dark-slate-gray-text {
+    color:darkslategray;
+}
+
+.dark-slate-gray-text:hover {
+    color:white;
+}
+
+.edit-text-color {
+    color:#ffffff;
+    font-weight:500;
+    padding-bottom:5px;
+}
+
+.details-text {
+    color:#ffffff;
+}
+
+.padding-six {
+    padding-bottom:6px;
 }
