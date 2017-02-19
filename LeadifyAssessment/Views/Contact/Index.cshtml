@@ -60,18 +60,20 @@
             }
 
         </table>
-        <div>
-            <div>
-                <button class="btn btn-default" type="button" id="addressSearch"
-                        onclick="location.href='@Url.Action("Create", "Contact")'">Add</button>
-            </div>
-        </div>
         <br />
         <div  class="table-font edit-text-color shadow">
             Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
 
             @Html.PagedListPager(Model, page => Url.Action("Index",
     new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+            <div>
+                <div>
+                    <button class="btn btn-default" type="button" id="addressSearch"
+                            onclick="location.href='@Url.Action("Create", "Contact")'">
+                        Add contact
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     </div>
