@@ -276,3 +276,6 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/**
 # !tools/packages.config
+*.mdf
+LeadifyAssessment/App_Data/LeadifyAssessmentContext-20170218083804_log.ldf
+*.ldf
